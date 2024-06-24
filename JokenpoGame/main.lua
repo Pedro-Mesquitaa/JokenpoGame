@@ -248,7 +248,7 @@ function love.draw()
 
         love.graphics.setFont(Fonts._30)
         love.graphics.setColor(0.110, 0.110, 0.110)
-        love.graphics.print(Game.Result.Text1, Game.Result.x3, Game.Result.y3)
+        love.graphics.print(Game.Result.Text3, Game.Result.x3, Game.Result.y3)
     end
 end
 
