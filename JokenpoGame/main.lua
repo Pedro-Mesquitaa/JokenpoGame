@@ -169,7 +169,7 @@ function love.load()
 
 
             Text1 = "O COMPUTADOR GANHOU!",
-            x1 = 440,
+            x1 = 420,
             y1 = 560,
 
             Text2 = "VOCÊ GANHOU!",
@@ -177,7 +177,7 @@ function love.load()
             y2 = 560,
 
             Text3 = "EMPATE!",
-            x3 = 440,
+            x3 = 465,
             y3 = 560
         }
     }
@@ -266,6 +266,11 @@ function love.mousepressed(x, y, button, istouch, presses)
             
             Start.Visible = true
             Game.Visible = false
+            Game.Result.Visible2 = false
+            Game.Result.Visible3 = false
+            Game.Result.Visible1 = false
+            Game.Placar.PlacarBox.PointPlayer.text = "0"
+            Game.Placar.PlacarBox.PointPc.text = "0"
         end
 
         if (Game.Visible == true) and x >= Game.Options.Rock.x and x <= Game.Options.Rock.x + 128 and y >= Game.Options.Rock.y and y <= Game.Options.Rock.y + 128 then
